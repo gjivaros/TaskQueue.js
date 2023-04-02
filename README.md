@@ -1,5 +1,5 @@
 # TaskQueue.js
-> TaskQueue.js est une bibliothèque JavaScript de gestion de file d'attente de tâches pour le développement côté client et serveur.
+> TaskQueue.js is a JavaScript task queue management library for client and server side development.
 
 
 ## Table of Contents
