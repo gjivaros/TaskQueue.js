@@ -1,4 +1,4 @@
-import { TaskQueue } from "./TaskQueue";
+import { TaskQueue } from "./taskQueue";
 
 describe("TaskQueue", () => {
 	describe("push method", () => {
