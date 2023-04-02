@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "sourceMap": true,
+    "target": "ES2022",
+    "esModuleInterop": true,
+  },
+  "include": [
+    "src"
+  ]
+}

@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# VS-code
+.vscode/settings.json
+
+dist-cjs/
+dist-mjs/

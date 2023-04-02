@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.mjs.json",
+  "exclude": [
+    "./src/**/*spec.ts"
+  ]
+}

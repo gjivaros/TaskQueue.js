@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/rome/configuration_schema.json",
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "tab",
+    "indentSize": 2,
+    "lineWidth": 100,
+    "ignore": []
+  },
+  "files": {
+    "ignore": [
+      "*.js",
+      "*.jsx",
+      "dist"
+    ]
+  }
+}

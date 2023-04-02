@@ -1,0 +1,45 @@
+{
+	"name": "taskqueue.js",
+	"version": "0.1.0",
+	"description": "> TaskQueue.js is a JavaScript task queue management library for client and server side development.",
+	"keywords": [
+		"JavaScript",
+		"TypeScript",
+		"Queue",
+		"Data Structure"
+	],
+	"author": "Jivaros GBETO",
+	"license": "MIT",
+	"scripts": {
+		"prepare": "npm run lint && npm test && npm run build",
+		"build": "npm run clear && npm run tsc:cjs && npm run tsc:mjs",
+		"clear": "rimraf dist-cjs/* dist-mjs/*",
+		"tsc:cjs": "tsc --project ./tsconfig.cjs.build.json",
+		"tsc:mjs": "tsc --project ./tsconfig.mjs.build.json",
+		"test": "jest",
+		"lint": "rome check .",
+		"lint:apply": "rome check . --apply",
+		"lint:apply-suggested": "rome check . --apply-suggested",
+		"format:format": "rome format .",
+		"format": "rome format . --write"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.4.0",
+		"jest": "^29.4.1",
+		"rimraf": "^4.1.2",
+		"ts-jest": "^29.0.5",
+		"typescript": "^4.9.5",
+		"rome": "^11.0.0"
+	},
+	"jest": {
+		"verbose": true,
+		"preset": "ts-jest"
+	},
+	"main": "dist-cjs/taskQueue.js",
+	"module": "dist-mjs/taskQueue.js",
+	"types": "dist-mjs/taskQueue.d.ts",
+	"files": [
+		"dist-cjs",
+		"dist-mjs"
+	]
+}

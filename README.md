@@ -8,7 +8,6 @@
 * [Contribute](#contribute)
 * [License](#license)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## Installation
@@ -45,6 +44,10 @@ TaskQueue.js also handles errors and automatic task repetition in case of failur
 
 ## Contribute
 Contributions to TaskQueue.js are welcome! To contribute, please fork this repository, make your changes and submit a pull request.
+```sh
+cp .vscode/settings.example.json .vscode/settings.json
+npm i
+```
 
 
 
