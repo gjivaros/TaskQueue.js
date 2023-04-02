@@ -36,10 +36,7 @@ You can run the tasks in sequence using the `run()` method:
 ```ts
 await taskQueue.run()
 ```
-Or you can run the tasks in parallel using the `runParallel()` method:
-```ts
-await taskQueue.runParallel()
-```
+
 TaskQueue.js also handles errors and automatic task repetition in case of failure.
 
 ## Contribute

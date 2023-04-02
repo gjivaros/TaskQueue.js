@@ -4,7 +4,7 @@ export class TaskQueue {
 	#tasks: QueuedTask[] = [];
 	#maxRetries: number;
 
-	constructor(maxRetries = 0) {
+	constructor(maxRetries = 3) {
 		this.#maxRetries = maxRetries;
 	}
 
@@ -17,22 +17,19 @@ export class TaskQueue {
 	}
 
 	async run() {
-		for (const task of this.#tasks) {
+		let task: QueuedTask | undefined;
+		while ((task = this.#tasks.shift())) {
 			await this.#runTask(task);
 		}
 	}
 
-	async runParallel() {
-		await Promise.all(this.#tasks.map((task) => this.#runTask(task)));
-	}
-
 	async #runTask(task: QueuedTask) {
 		try {
-			await task.task(...task.args);
+			await task.task();
 		} catch (error) {
 			if (task.retryCount < this.#maxRetries) {
 				task.retryCount++;
-				await this.#runTask(task);
+				this.#tasks.push(task);
 			} else {
 				throw error;
 			}
