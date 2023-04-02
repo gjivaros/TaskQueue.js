@@ -53,4 +53,4 @@ TaskQueue.js is licensed under the MIT license. See the LICENSE file for more de
 
 
 ## Contact
-Created by Jivaros GBETO - [Twitter](https://twitter.com/JivarosG) | [LinkedIn](https://www.linkedin.com/in/jivaros-gbeto/)| jivarosgbeto@gmail.com - feel free to contact me!
+Created by Jivaros GBETO - [Twitter](https://twitter.com/JivarosG) | [LinkedIn](https://www.linkedin.com/in/jivaros-gbeto/) | jivarosgbeto@gmail.com - feel free to contact me!
