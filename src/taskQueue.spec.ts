@@ -8,7 +8,7 @@ describe("TaskQueue", () => {
 		});
 
 		it("should push task in queue", () => {
-			taskQueue.push(() => console.log("Task 1"));
+			taskQueue.push(async () => console.log("Task1"));
 			expect(taskQueue.getSize()).toBe(1);
 		});
 	});
